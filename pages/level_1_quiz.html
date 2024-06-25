@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1 Quiz</title>
+    <link rel="stylesheet" href="/styles/level_1_quiz.css">
+</head>
+
+<body>
+    <div>
+        <a href="/index.html" id="home_link">Home</a>
+        <div>
+            <h1>Select the song</h1>
+            <div>
+                <a href="/pages/level_1_win.html">Option 1</a>
+                <button id="listen1">Listen</button>
+                <audio id="audio1" src="/music/level_1_music.mp3"></audio>
+            </div>
+            <div>
+                <a href="/pages/level_1_lose.html">Option 2</a>
+                <button id="listen2">Listen</button>
+                <audio id="audio2" src="/music/level_2_music.mp3"></audio>
+            </div>
+            <div>
+                <a href="/pages/level_1_lose.html">Option 3</a>
+                <button id="listen3">Listen</button>
+                <audio id="audio3" src="/music/option_3_music.mp3"></audio>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const audio1 = document.getElementById("audio1");
+            const audio2 = document.getElementById("audio2");
+            const audio3 = document.getElementById("audio3");
+            let isPlaying = false;
+            let currentAudio = null;
+
+            function handleListenClick(audioElement) {
+                if (isPlaying) {
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0;
+                } else {
+                    audio1.pause();
+                    audio2.pause();
+                    audio3.pause();
+                    audioElement.play();
+                    currentAudio = audioElement;
+                }
+                isPlaying = !isPlaying;
+            }
+
+            document.getElementById("listen1").addEventListener("click", function () {
+                handleListenClick(audio1);
+            });
+
+            document.getElementById("listen2").addEventListener("click", function () {
+                handleListenClick(audio2);
+            });
+
+            document.getElementById("listen3").addEventListener("click", function () {
+                handleListenClick(audio3);
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2 Game</title>
+    <link rel="stylesheet" href="/styles/level_2_game.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+                "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <a href="/index.html">Home</a>
+        <div id="Level">
+            <h1>Level 2</h1>
+        </div>
+        <div>
+            <canvas id="three-canvas" width="750" height="374"></canvas>
+            <button id="level_2_action">Action</button>
+        </div>
+        <div id="next_level" style="display: none;">
+            <a href="/pages/level_2_quiz.html">GO</a>
+        </div>
+        <div>
+            <h2>Temperature</h2>
+            <h2></h2>
+            <h2>℃</h2>
+        </div>
+        <div>
+            <h2>Heart Rate</h2>
+            <h2></h2>
+            <h2>BPM</h2>
+        </div>
+    </div>
+
+    <script src="/scripts/level_2_game_model.js" type="module"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                document.getElementById('next_level').style.display = 'block';
+            }, 10000); // 60 seconds (1 minute)
+        });
+    </script>
+</body>
+
+</html>
