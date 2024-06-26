@@ -12,28 +12,53 @@ body, html{
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    width: 100vw;
-    position: relative;
+    background: linear-gradient(to bottom right, #ebff7d, #7bd4fd);
+    color: white;
+    text-align: center;
+}
+
+#back-button,#home-button{
+    background-color: rgba(255, 255, 255, 0.534);
+    border: none;
+    border-radius: 10px;
+    padding: 30px 30px;
+    cursor: pointer;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    top: 20px;
+    position: absolute;
+}
+
+#back-button{
+    left: 20px;
+}
+
+#home-button{
+    right: 20px;
+}
+
+#back-link, #home-link {
+    position: absolute;
+    top: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 #back-link {
-    position: absolute;
-    top: 20px;
     left: 20px;
-    font-size: 1.5em; 
-    color: #4A4A4A;
-    text-decoration: none;
 }
 
 #home-link {
-    position: absolute;
-    top: 20px;
     right: 20px;
-    font-size: 1.5em; 
-    color: #4A4A4A; 
-    text-decoration: none;
 }
 
+
+#back-link:hover i, #home-link:hover i {
+    color: #123bf3;
+}
+
+
+/* title text */
 #Level {
     display: flex;
     justify-content: center;
@@ -59,14 +84,16 @@ body, html{
 }
 
 #model-container {
-    width: 80%;
+    width: 95%;
     height: 95%;
 }
 
 #level1_model_canvas{
     width: 100%;
     height: 100%;
-    padding: 0 30px 30px 30px;
+    margin: 0px 10px 0px 30px;
+    border: 5px solid white;
+    border-radius: 50px;
 }
 
 #start-container {
@@ -89,20 +116,21 @@ body, html{
 #button-text{
     font-size: 4em;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(255, 129, 129); 
+    color: hsl(184, 96%, 55%);
+ 
     text-align: center;
     text-decoration:none;
     font-weight: bolder;
 }
 #button-text:hover{
-    color: rgb(253, 90, 90);
+    color: rgb(0, 13, 133);
+    
 
 }
 
 #start-button:hover {
-    color: rgb(255, 108, 108);
-    background-color: #fff4de;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.6);
+    color: hsl(180, 100%, 2%);
+    
 }
 
 #start-button:active {
