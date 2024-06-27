@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #ffccff, #ff99ff, #ff66ff);
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
   color: white;
   text-align: center;
   font-family: "Arial", sans-serif;
@@ -16,12 +16,24 @@ a {
   margin: 20px;
   font-size: 2rem;
   font-weight: bold;
-  color: #ff33cc;
+  color: #4b3dca;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ff66ff;
+  color: #1900ff;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(150, 209, 30) 0%,
+    rgb(201, 191, 13) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #fireworks-container {

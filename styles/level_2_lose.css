@@ -1,23 +1,33 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  text-align: center;
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  text-align: center;
 }
 
 h2 {
+  margin-top: 0;
+  font-size: 72px;
   color: red;
+  gap: 2rem;
 }
 
 a {
-  display: block;
-  margin: 10px 0;
+  font-size: 48px;
+  margin: 10px 20px;
   text-decoration: none;
-  color: blue;
-  font-weight: bold;
+  color: #005dcf;
 }
 
 a:hover {
-  text-decoration: underline;
   color: darkblue;
 }
