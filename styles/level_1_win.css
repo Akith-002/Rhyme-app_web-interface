@@ -15,16 +15,45 @@ body {
   height: 100vh;
 }
 
-a {
-  display: block;
-  margin: 20px;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #4b3dca;
+#home-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: rgba(255, 255, 255, 0.534);
+  padding: 10px 16px;
+  color: black;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#home-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.8);
+}
+
+#next_level {
   text-decoration: none;
 }
 
-a:hover {
+#next_level button {
+  margin-top: 25px;
+  padding: 15px 25px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #4b3dca;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#next_level button:hover {
   color: #1900ff;
 }
 
