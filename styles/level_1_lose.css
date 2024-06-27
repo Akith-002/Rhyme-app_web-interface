@@ -6,7 +6,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f8d7da;
+  background-image: linear-gradient(
+    to right,
+    #f78ca0 0%,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b 100%
+  );
 }
 
 div {
@@ -14,20 +20,19 @@ div {
 }
 
 h2 {
+  font-size: 64px;
   color: #721c24;
-  background-color: #f8d7da;
   padding: 20px;
-  border: 1px solid #f5c6cb;
   border-radius: 5px;
 }
 
 a {
-  display: block;
-  margin: 10px 0;
+  font-size: 48px;
+  margin: 10px 20px;
   text-decoration: none;
-  color: #0056b3;
+  color: #009fcf;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #0056b3;
 }

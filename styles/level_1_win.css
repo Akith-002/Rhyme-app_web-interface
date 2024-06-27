@@ -1,8 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #ffccff, #ff99ff, #ff66ff);
-  color: white;
+  background-image: radial-gradient(
+    circle 248px at center,
+    #16d9e3 0%,
+    #30c7ec 47%,
+    #46aef7 100%
+  );
   text-align: center;
   font-family: "Arial", sans-serif;
   display: flex;
@@ -16,20 +20,22 @@ a {
   margin: 20px;
   font-size: 2rem;
   font-weight: bold;
-  color: #ff33cc;
+  color: #4b3dca;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ff66ff;
+  color: #1900ff;
 }
 
 h1 {
   font-size: 4rem;
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  margin: 0;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(150, 209, 30) 0%,
+    rgb(201, 191, 13) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
