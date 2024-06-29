@@ -8,6 +8,7 @@ let audioBuffer, audioContext, audioSource;
 let partDuration;
 let currentPart = 0;
 let isRaised = true;
+let previousIsRaised = isRaised;
 let targetAngle = 0;
 const music1_url = "../music/level_1_music.mp3"; // Adjust the path as necessary
 
@@ -165,15 +166,32 @@ function init() {
   floor.receiveShadow = true;
   floor.position.y = -11;
   scene.add(floor);
+
+  // -----------don't delete------------------------
+
+  // function checkAndPlayNextPart(newIsRaised) {
+  //   if (newIsRaised !== previousIsRaised) {
+  //     playNextPart();
+  //     previousIsRaised = newIsRaised; // Update previousIsRaised to the new value
+  //   }
+  // }
+
+  // if(){
+  //   isRaised = true; // Toggle the state
+  //   checkAndPlayNextPart(isRaised);
+  //   targetAngle =0.95; // Set the target angle based on the state
+  // }
+
+  // if(){
+  // isRaised = false; // Toggle the state
+  // checkAndPlayNextPart(isRaised);
+  // targetAngle = -0.95; // Set the target angle based on the state
+  // }
+
+  // --------------------------------------------------
 }
 
 init();
 
-function action() {
-  playNextPart();
-  isRaised = !isRaised; // Toggle the state
-  targetAngle = isRaised ? 0.95 : -0.95; // Set the target angle based on the state
-}
-
 // Event listener for the action button
-document.getElementById("level_1_action").addEventListener("click", action);
+// document.getElementById("level_1_action").addEventListener("click", action);
