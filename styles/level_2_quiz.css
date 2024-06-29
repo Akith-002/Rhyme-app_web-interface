@@ -80,19 +80,22 @@ body, html{
 
 }
 
-/* Ansers */
+/* Anwsers */
 #option-button button{
   background-color: rgb(255, 255, 255);
   border: none;
   border-radius: 50px;
-  padding: 10px 250px;
+  padding: 10px ;
   box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
   transition: background-color 0.3s, box-shadow 0.3s;
   margin: 20px;
   font-size: 3.5em;
   position:relative;
+  width: 750px;
 }
-
+#option-button button:hover{
+  background-color: #92f2ff;
+}
 #option-button a {
   font-weight: bolder;
   text-decoration: none;
@@ -107,6 +110,8 @@ body, html{
   font-weight:bold;
   font-size: 2em;
   font-family:'Times New Roman', Times, serif;
+  width: 200px;
+  cursor: pointer;
 }
 
 #option-button #listenButton1{
