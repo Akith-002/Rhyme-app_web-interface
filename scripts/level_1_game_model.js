@@ -192,6 +192,3 @@ function init() {
 }
 
 init();
-
-// Event listener for the action button
-// document.getElementById("level_1_action").addEventListener("click", action);
