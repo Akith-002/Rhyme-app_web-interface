@@ -154,7 +154,6 @@ html {
   border: none;
   border-radius: 50px;
   padding: 20px 30px;
-  cursor: pointer;
   box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
     inset -2px -2px 5px rgba(255, 255, 255, 0.5);
   transition: background-color 0.3s, box-shadow 0.3s;
