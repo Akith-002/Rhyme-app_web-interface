@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page App</title>
+    <link rel="stylesheet" href="../styles/level_1_calibration.css">
+
+</head>
+<body>
+    <div id="content">
+        
+        <!-- Initial Page -->
+        <div id="level1">
+            <h1>Welcome</h1>
+        </div>
+
+        <!-- Intermediate Page -->
+        <div id="level2" class="hidden">
+            <div id="image"></div>
+            <div id="countdown">Get Ready: 3</div>
+        </div>
+
+        <!-- Final Page -->
+        <div id="final" class="hidden">
+            <h1>Final Page</h1>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('level1').classList.add('hidden');
+            document.getElementById('level2').classList.remove('hidden');
+
+            let countdownNumber = 3;
+            const countdownElement = document.getElementById('countdown');
+
+            const countdown = setInterval(() => {
+                countdownNumber--;
+                countdownElement.textContent = `Get Ready: ${countdownNumber}`;
+                if (countdownNumber === 0) {
+                    clearInterval(countdown);
+                    document.getElementById('level2').classList.add('hidden');
+                    document.getElementById('final').classList.remove('hidden');
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
