@@ -118,7 +118,7 @@ function init() {
   floor.position.y = -11;
   scene.add(floor);
 
-  setInterval(playNextPart, 3900);
+  setInterval(playNextPart, 3450);
 }
 
 init();
